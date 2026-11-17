@@ -1,0 +1,11 @@
+@startuml
+class Rectangulo {
+  -base: double
+  -altura: double
+  +getBase(): double
+  +setBase(base: double): void
+  +getAltura(): double
+  +setAltura(altura: double): void
+  +calcularArea(): double
+}
+@enduml

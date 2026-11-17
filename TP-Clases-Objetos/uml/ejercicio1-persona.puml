@@ -1,0 +1,7 @@
+@startuml
+class Persona {
+  ~nombre: String
+  ~edad: int
+  ~mostrarDatos(): void
+}
+@enduml

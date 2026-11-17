@@ -1,0 +1,22 @@
+@startuml
+class Animal {
+  -nombre: String
+  -edad: int
+  ~Animal(nombre: String, edad: int)
+  +getNombre(): String
+  +setNombre(nombre: String): void
+  +getEdad(): int
+  +setEdad(edad: int): void
+}
+
+class Perro {
+  -raza: String
+  ~Perro(nombre: String, edad: int, raza: String)
+  +getRaza(): String
+  +setRaza(raza: String): void
+  +mostrarDatos(): void
+  +ladrar(): void
+}
+
+Animal <|-- Perro
+@enduml

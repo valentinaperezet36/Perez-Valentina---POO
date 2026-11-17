@@ -1,0 +1,9 @@
+@startuml
+class Libro {
+  -titulo: String
+  -autor: String
+  -anio: int
+  ~Libro(titulo: String, autor: String, anio: int)
+  ~mostrarDatos(): void
+}
+@enduml

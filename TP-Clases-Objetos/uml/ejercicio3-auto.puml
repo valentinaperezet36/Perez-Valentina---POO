@@ -1,0 +1,9 @@
+@startuml
+class Auto {
+  -marca: String
+  -modelo: String
+  -color: String
+  ~Auto(marca: String, modelo: String, color: String)
+  ~mostrarDatos(): void
+}
+@enduml

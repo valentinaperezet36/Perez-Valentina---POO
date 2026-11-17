@@ -1,0 +1,21 @@
+@startuml
+class Persona {
+  -nombre: String
+  -edad: int
+  ~Persona(nombre: String, edad: int)
+  +getNombre(): String
+  +setNombre(nombre: String): void
+  +getEdad(): int
+  +setEdad(edad: int): void
+}
+
+class Empleado {
+  -salario: double
+  ~Empleado(nombre: String, edad: int, salario: double)
+  +getSalario(): double
+  +setSalario(salario: double): void
+  +mostrarDatos(): void
+}
+
+Persona <|-- Empleado
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+class CuentaBancaria {
+  -saldo: double
+  +getSaldo(): double
+  +setSaldo(saldo: double): void
+}
+@enduml

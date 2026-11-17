@@ -1,0 +1,21 @@
+@startuml
+class Vehiculo {
+  -marca: String
+  -modelo: String
+  ~Vehiculo(marca: String, modelo: String)
+  +getMarca(): String
+  +setMarca(marca: String): void
+  +getModelo(): String
+  +setModelo(modelo: String): void
+}
+
+class Auto {
+  -cantidadPuertas: int
+  ~Auto(marca: String, modelo: String, cantidadPuertas: int)
+  +getCantidadPuertas(): int
+  +setCantidadPuertas(cantidadPuertas: int): void
+  +mostrarInformacion(): void
+}
+
+Vehiculo <|-- Auto
+@enduml
